@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { getAllUsers } from '../lib/getAllUsers'
 import Link from 'next/link';
+import { User } from '@/types';
 
 
 
