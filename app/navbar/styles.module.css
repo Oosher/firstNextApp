@@ -1,7 +1,8 @@
 .navbar{
     min-height: 3vh;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
     background-color: darkgrey;
 }
 
