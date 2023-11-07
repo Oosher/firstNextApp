@@ -1,0 +1,8 @@
+.main{
+    min-height: 97vh;
+    display: grid;
+    place-content: center;
+
+    background-color: darkgrey;
+}
+
