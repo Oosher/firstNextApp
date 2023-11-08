@@ -14,7 +14,7 @@ export default async function UserPosts({postPromise}:Props) {
 
 
     const content = posts.map(post =>
-                    <article  key={post.id}>
+                    <article  key={post.id+1}>
                         <h2>{post.title}</h2>
                         <p>{post.body}</p>
                     </article>

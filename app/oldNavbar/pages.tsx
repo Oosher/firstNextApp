@@ -1,4 +1,4 @@
-import Link from "next/link"
+/* import Link from "next/link"
 import styles from "./styles.module.css"
 
 export default function Navbar() {
@@ -11,3 +11,4 @@ export default function Navbar() {
     </div>
   )
 }
+ */

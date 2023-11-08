@@ -9,7 +9,7 @@ export default async function getUser (userId:string){
         return res.json();
 
     }catch(err:any){ 
-        throw new Error(err.message);
+        return undefined;
         
     }
 
