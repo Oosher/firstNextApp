@@ -49,6 +49,8 @@ export default async function UserPage({params:{userId}}:Params) {
 
 
     if (!user.name) return notFound();
+
+    
   return <>
         <h2>{user.name}</h2>
         <Suspense fallback={<h2>Loading ....</h2>}> 

@@ -33,8 +33,6 @@ type User = {
     }
 
 
-
-
     type Result = {
       pageid:string,
       title:string,
@@ -50,4 +48,11 @@ type User = {
         query?:{
           pages?:Result[],
         },
+    }
+  
+
+    type BlogPost = {
+      id:string,
+      title:string,
+      date:string,
     }
