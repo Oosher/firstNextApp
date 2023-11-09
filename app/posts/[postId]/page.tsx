@@ -70,7 +70,7 @@ export default async function DynamicPostPage({params:{postId}}:Props) {
             <article>
                 <section dangerouslySetInnerHTML={{ __html: contentHtml }} />
                 <p>
-                    <Link href="/">← Back to home</Link>
+                    <Link href="/posts">← Back to Posts</Link>
                 </p>
             </article>
         </main>

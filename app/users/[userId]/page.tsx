@@ -52,7 +52,7 @@ export default async function UserPage({params:{userId}}:Params) {
 
     
   return <>
-        <h2>{user.name}</h2>
+        <h2 className=' dark:text-white font-sans font-bold text-7xl mt-6 mx-auto max-w-2xl w-fit'>{user.name}</h2>
         <Suspense fallback={<h2>Loading ....</h2>}> 
              <UserPosts postPromise= {userPost}/>
         </Suspense>

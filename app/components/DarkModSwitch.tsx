@@ -4,26 +4,25 @@ import { useState } from "react";
 
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import Switch from '@mui/material/Switch';
 
 export default function DarkModSwitch() {
 
   const [dark,setDark] = useState(false);
 
-  const toggleDark = () => {
-    document.documentElement.classList.toggle('dark');
+  const toggleDark = async () => {
+    
     setDark((prev)=>!prev);
+    await document.documentElement.classList.toggle('dark');
   };
 
   return (
     <>
       <div >
-      {dark?<DarkModeIcon/>:<LightModeIcon/>}
-      <input
-          type="checkbox"
-          name="toggle"
-          id="toggle"
+      {dark?<DarkModeIcon className=" text-yellow-200"/>:<LightModeIcon className=" text-white"/>}
+      <Switch
+      
           checked={dark}
-          className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
           onChange={toggleDark}
         />
         

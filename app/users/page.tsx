@@ -24,7 +24,7 @@ export default async function Users() {
 
     const pageContent = (
         <section>{users.map(user =><>
-            <p key={user.id}>
+            <p key={user.id} className=' dark:text-white mt-6 mx-auto max-w-2xl w-fit'>
                 <Link href={`/users/${user.id}`}>
                     {user.name}
                 </Link>
